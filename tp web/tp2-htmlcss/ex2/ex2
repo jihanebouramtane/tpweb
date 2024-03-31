@@ -1,0 +1,64 @@
+
+Tous les éléments <a> emboités dans un élément <p> : 
+    p a {
+    /* Styles à appliquer aux liens <a> emboîtés dans un paragraphe <p> */
+}
+
+
+Tous les éléments <img> appartenant à la classe encadre et placés dans un élément <div> appartenant à la classe enonce :
+    div.enonce img.encadre {
+    /* Styles à appliquer aux images <img> de classe "encadre" dans des divs de classe "enonce" */
+}
+
+
+Tous les éléments <img> dont lattribut width vaut 300 :
+   img[width="300"] {
+    /* Styles à appliquer aux images <img> avec un attribut width de valeur 300 */
+}
+
+
+Tous les éléments <time> dont lattribut datetime a été défini et qui sont situés dans un élément <article> appartenant à la classe remarque.
+   article.remarque time[datetime] {
+    /* Styles à appliquer aux éléments <time> avec un attribut datetime défini,
+       situés dans des éléments <article> de classe "remarque" */
+}
+
+Tous les éléments <p> qui sont fils dun élément <div> de la classe exemple:
+     div.exemple > p {
+    /* Styles à appliquer aux éléments <p> qui sont des fils directs un élément <div> de classe "exemple" */
+}
+
+
+Tous les éléments <img> de classe encadre placés dans un élément <p> dont lid est important:
+    p#important img.encadre {
+       /* Styles à appliquer aux éléments <img> de classe "encadre" situés dans un élément <p> avec un attribut id de valeur "important" */
+     }
+
+Le premier élément <img> dont le père est un élément <div>:
+    div > img:first-of-type {
+    /* Styles à appliquer au premier élément <img> dont le parent est un élément <div> */
+}
+
+
+Tous les éléments <img> fils de rang impair dun élément quelconque du document html:
+    *:nth-of-type(odd) > img {
+    /*Styles à appliquer aux éléments <img> fils de rang impair d'un élément quelconque*/
+}
+
+
+Tous les éléments <a> dont la cible est un fichier d' extension .jpg situé dans le premier élément <p> qui est fils d'un élément <article> de la classe exercice:
+     article.exercice > p:first-of-type > a[href$=".jpg"] {
+    /* Styles à appliquer aux éléments <a> */
+}
+
+Les éléments <div> de la classe remarque qui sont les premiers frères (suivant) d'un élément <div> de classe reponse:
+div.reponse + div.remarque {
+    /* Styles à appliquer aux éléments <div> */
+}
+
+
+Le second élément de type <p> fils d'un élément <article> placé dans un élément <section>:
+ section > article > p:nth-of-type(2) {
+    /* Styles à appliquer aux seconds éléments <p> */
+ }
+
